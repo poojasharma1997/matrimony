@@ -1,0 +1,240 @@
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  @include mainpage-mixin-min-sm();
+  @include serviceList-mixin-min-sm();
+  @include blog-mixin-min-sm();
+  @include serviceDetail-mixin-min-sm();
+  @include main-mixin-min-sm();
+  @include premiumPlan-mixin-min-sm();
+  @include heading-mixin-min-sm();
+  @include form-mixin-min-sm();
+  @include modalForm-mixin-min-sm();
+  @include sidebar-mixin-min-sm();
+  @include mainContent-mixin-min-sm();
+  @include contact-mixin-min-sm();
+  @include workprocess-mixin-min-sm();
+  @include blogdetailfluid-mixin-min-sm();
+  @include footer-mixin-min-sm();
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  @include mainpage-mixin-min-md();
+  @include serviceList-mixin-min-md();
+  @include blog-mixin-min-md();
+  @include serviceDetail-mixin-min-md();
+  @include main-mixin-min-md();
+  @include premiumPlan-mixin-min-md();
+  @include heading-mixin-min-md();
+  @include form-mixin-min-md();
+  @include modalForm-mixin-min-md();
+  @include sidebar-mixin-min-md();
+  @include mainContent-mixin-min-md();
+  @include contact-mixin-min-md();
+  @include workprocess-mixin-min-md();
+  @include blogdetailfluid-mixin-min-md();
+  @include footer-mixin-min-md();
+  
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  @include mainpage-mixin-min-lg();
+  @include serviceList-mixin-min-lg();
+  @include blog-mixin-min-lg();
+  @include serviceDetail-mixin-min-lg();
+  @include main-mixin-min-lg();
+  @include premiumPlan-mixin-min-lg();
+  @include heading-mixin-min-lg();
+  @include form-mixin-min-lg();
+  @include modalForm-mixin-min-lg();
+  @include sidebar-mixin-min-lg();
+  @include mainContent-mixin-min-lg();
+  @include contact-mixin-min-lg();
+  @include workprocess-mixin-min-lg();
+  @include blogdetailfluid-mixin-min-lg();
+  @include footer-mixin-min-lg();
+
+  
+
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  @include mainpage-mixin-min-xl();
+  @include serviceList-mixin-min-xl();
+  @include blog-mixin-min-xl();
+  @include serviceDetail-mixin-min-xl();
+  @include main-mixin-min-xl();
+  @include premiumPlan-mixin-min-xl();
+  @include heading-mixin-min-xl();
+  @include form-mixin-min-xl();
+  @include modalForm-mixin-min-xl();
+  @include sidebar-mixin-min-xl();
+  @include mainContent-mixin-min-xl();
+  @include contact-mixin-min-xl();
+  @include workprocess-mixin-min-xl();
+  @include blogdetailfluid-mixin-min-xl();
+  @include footer-mixin-min-xl();
+  
+
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+  @include mainpage-mixin-min-xxl();
+  @include serviceList-mixin-min-xxl();
+  @include blog-mixin-min-xxl();
+  @include serviceDetail-mixin-min-xxl();
+  @include main-mixin-min-xxl();
+  @include premiumPlan-mixin-min-xxl();
+  @include heading-mixin-min-xxl();
+  @include form-mixin-min-xxl();
+  @include modalForm-mixin-min-xxl();
+  @include sidebar-mixin-min-xxl();
+  @include mainContent-mixin-min-xxl();
+  @include contact-mixin-min-xxl();
+  @include workprocess-mixin-min-xxl();
+  @include blogdetailfluid-mixin-min-xxl();
+  @include footer-mixin-min-xxl();
+
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+  @include mainpage-mixin-max-xl();
+  @include serviceList-mixin-max-xl();
+  @include blog-mixin-max-xl();
+  @include serviceDetail-mixin-max-xl();
+  @include main-mixin-max-xl();
+  @include premiumPlan-mixin-max-xl();
+  @include heading-mixin-max-xl();
+  @include form-mixin-max-xl();
+  @include modalForm-mixin-max-xl();
+  @include sidebar-mixin-max-xl();
+  @include mainContent-mixin-max-xl();
+  @include contact-mixin-max-xl();
+  @include workprocess-mixin-max-xl();
+  @include blogdetailfluid-mixin-max-xl();
+  @include footer-mixin-max-xl();
+  
+
+}
+
+// Large devices (desktops, less than 1300px)
+@media (max-width: 1299.98px) {
+  @include mainpage-mixin-max-1300();
+  @include serviceList-mixin-max-1300();
+  @include blog-mixin-max-1300();
+  @include serviceDetail-mixin-max-1300();
+  @include main-mixin-max-1300();
+  @include premiumPlan-mixin-max-1300();
+  @include heading-mixin-max-1300();
+  @include form-mixin-max-1300();
+  @include modalForm-mixin-max-1300();
+  @include sidebar-mixin-max-1300();
+  @include mainContent-mixin-max-1300();
+  @include contact-mixin-max-1300();
+  @include workprocess-mixin-max-1300();
+  @include blogdetailfluid-mixin-max-1300();
+  @include footer-mixin-max-1300();
+
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  @include mainpage-mixin-max-lg();
+  @include serviceList-mixin-max-lg();
+  @include blog-mixin-max-lg();
+  @include serviceDetail-mixin-max-lg();
+  @include main-mixin-max-lg();
+  @include premiumPlan-mixin-max-lg();
+  @include heading-mixin-max-lg();
+  @include form-mixin-max-lg();
+  @include modalForm-mixin-max-lg();
+  @include sidebar-mixin-max-lg();
+  @include mainContent-mixin-max-lg();
+  @include contact-mixin-max-lg();
+  @include workprocess-mixin-max-lg();
+  @include blogdetailfluid-mixin-max-lg();
+  @include footer-mixin-max-lg();
+  
+
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  @include mainpage-mixin-max-md();
+  @include button-mixin-max-md();
+  // @include testimonial-mixin-max-md();
+  @include serviceList-mixin-max-md();
+  @include blog-mixin-max-md();
+  @include serviceDetail-mixin-max-md();
+  @include main-mixin-max-md();
+  @include premiumPlan-mixin-max-md();
+  @include heading-mixin-max-md();
+  @include form-mixin-max-md();
+  @include modalForm-mixin-max-md();
+  @include sidebar-mixin-max-md();
+  @include mainContent-mixin-max-md();
+  @include contact-mixin-max-md();
+  @include workprocess-mixin-max-md();
+  @include blogdetailfluid-mixin-max-md();
+  @include footer-mixin-max-md();
+  
+
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  @include mainpage-mixin-max-sm();
+  // @include service-mixin-max-sm();
+  @include serviceList-mixin-max-sm();
+  @include blog-mixin-max-sm();
+  @include serviceDetail-mixin-max-sm();
+  @include main-mixin-max-sm();
+  @include premiumPlan-mixin-max-sm();
+  @include heading-mixin-max-sm();
+  @include form-mixin-max-sm();
+  @include modalForm-mixin-max-sm();
+  @include sidebar-mixin-max-sm();
+  @include mainContent-mixin-max-sm();
+  @include contact-mixin-max-sm();
+  @include workprocess-mixin-max-sm();
+  @include blogdetailfluid-mixin-max-sm();
+  @include footer-mixin-max-sm();
+  
+
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  @include mainpage-mixin-max-xs();
+  // @include service-mixin-max-xs();
+  @include serviceList-mixin-max-xs();
+  @include blog-mixin-max-xs();
+  @include serviceDetail-mixin-max-xs();
+  @include main-mixin-max-xs();
+  @include premiumPlan-mixin-max-xs();
+  @include heading-mixin-max-xs();
+  @include form-mixin-max-xs();
+  @include modalForm-mixin-max-xs();
+  @include sidebar-mixin-max-xs();
+  @include mainContent-mixin-max-xs();
+  @include contact-mixin-max-xs();
+  @include workprocess-mixin-max-xs();
+  @include blogdetailfluid-mixin-max-xs();
+  @include footer-mixin-max-xs();
+  
+
+
+  // @include heading-fs-12-mixin-max-xs();
+}
+
+// XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width

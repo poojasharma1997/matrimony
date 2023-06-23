@@ -1,0 +1,89 @@
+.headerFixed {
+    background-color: rgb($theme2, 0.5);
+    &.contentFixed {
+        background-color: $theme2;
+        // border-bottom: 0.5px solid $gray-300;
+        box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb), 0.15) !important;
+    }
+    z-index: 99;
+    & .header {
+        
+        & .navbar {
+            height: 52px;
+            & .navInner {
+                width: 100%;
+                & .logo {
+                    width: 46px;
+                    // height: 46px;
+                    & .logoImg {
+                        // aspect-ratio: 10/10;
+                        object-fit: contain;
+                        object-position: top center;
+                    }
+                }
+
+                & .headerMenu {
+                    & .headerMenuList {
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
+
+                & .menuIcon {
+                    width: 26px;
+                    height: 26px;
+                    display: inline-flex;
+                }
+            }
+        }
+    }
+}
+
+.offcanvasHeader {
+    background-color: $theme2;
+    width: 341px !important; 
+    & .offcanvas-header {
+        & .headerLabelLogo {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+    
+            & .headerLabelLogoImg {
+                object-fit: contain;
+                aspect-ratio: 10/10;
+            }
+        }
+
+        & .btnCloseCanvas {
+            // background: $white url('../img/icons/searchDark.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 15px;
+            height: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            border-radius: 100%;
+            opacity: 1;
+            padding: 10px;
+        }
+    }
+    
+
+    & .offcanvas-body {
+        & .headerMenuList {
+            width: 100%;
+            display: inline-block;
+            background-color: $white;
+
+        }
+    }
+}
+
+
+
+
+

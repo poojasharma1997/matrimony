@@ -1,0 +1,86 @@
+.sectionHeading {
+    // line-height: 1.2;
+    & .mainHeading {
+        font-weight: 600;
+        text-transform: capitalize;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 35px;
+    }
+    & .subheading {
+        font-size: 16px;
+        font-weight: 400;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-transform: capitalize;
+    }
+
+    
+}
+
+@mixin heading-mixin-min-sm(){
+};
+@mixin heading-mixin-min-md(){
+
+};
+@mixin heading-mixin-min-lg(){
+
+};
+@mixin heading-mixin-min-xl(){
+
+};
+@mixin heading-mixin-min-xxl(){
+
+};
+@mixin heading-mixin-max-xl(){
+
+};
+@mixin heading-mixin-max-1300(){
+
+};
+@mixin heading-mixin-max-lg(){
+
+};
+@mixin heading-mixin-max-md(){
+    .sectionHeading {
+        & .mainHeading {
+            font-size: 28px;
+        }
+        & .subheading {
+            font-size: 14px;
+        }
+    
+        
+    }
+};
+@mixin heading-mixin-max-sm(){
+    .sectionHeading {
+        & .mainHeading {
+            font-size: 28px;
+        }
+        & .subheading {
+            font-size: 14px;
+        }
+    
+        
+    }
+};
+@mixin heading-mixin-max-xs(){
+    .sectionHeading {
+        & .mainHeading {
+            font-size: 18px;
+        }
+        & .subheading {
+            font-size: 12px;
+        }
+    
+        
+    }
+};
+

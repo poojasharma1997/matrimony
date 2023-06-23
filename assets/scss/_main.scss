@@ -1,0 +1,340 @@
+
+
+::-webkit-scrollbar-track {
+  // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: rgba($black, 0);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: rgba($black, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $theme2;
+}
+
+
+body {
+  letter-spacing: 0.5px;
+  user-select: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.bannerSection {
+  background: lighten($color: $theme1, $amount: 60) url('../img/bg/shapeRed.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::after{
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 200px;
+      background-position: center;
+      background-image: url('../img/bg/bannerSection.svg');
+  }
+
+  & .bannerHeading {
+      font-size: 35px;
+      font-weight: 600;
+
+  }
+
+  & .bannerBreadCrumb {
+      position: relative;
+      z-index: 2;
+      & .breadCrumbOrder {
+          margin: 0;
+          padding: 0;
+          display: flex;
+
+          & .breadCrumbOrderList {
+              list-style: none;
+              padding: 0px 15px;
+              position: relative;
+              color: $gray-700;
+              text-transform: capitalize;
+
+              &::after {
+                  content: '>';
+                  position: absolute;
+                  top: 0;
+                  margin-left: 10px;
+                  color: $gray-700;
+                  font-weight: 600;
+              }
+
+              &:last-child {
+                  &::after {
+                      content: none !important;
+                  }
+              }
+
+              & a {
+                color: $gray-700;
+
+                &:hover {
+                  color: $theme1;
+                }
+              }
+          }
+      }
+  }
+  
+}
+
+.brerdCrumb {
+    padding-top: 60px;
+    & .bannerHeading {
+        font-size: 35px;
+        font-weight: 600;
+
+    }
+
+    & .breadCrumbOrder {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        & .breadCrumbOrderList {
+            list-style: none;
+            padding: 0px 15px;
+            position: relative;
+            color: $gray-700;
+            text-transform: capitalize;
+
+            &::after {
+                content: '>';
+                position: absolute;
+                top: 0;
+                margin-left: 10px;
+                color: $gray-700;
+                font-weight: 600;
+            }
+
+            &:last-child {
+                &::after {
+                    content: none !important;
+                }
+            }
+
+            & a {
+              color: $gray-700;
+
+              &:hover {
+                color: $theme1;
+              }
+            }
+        }
+    }
+}
+
+.modalButton {
+  &.btn-close {
+    background:none;
+    position: relative;
+    height: 20px;
+    width: 20px;
+    opacity: 1;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-image: url('../img/icons/close.svg');
+        width: 15px;
+        height: 15px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+  }
+  &.previous {
+    
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translate(-50%,-50%);
+        background-image: url('../img/icons/previous.svg');
+        width: 15px;
+        height: 15px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+  }
+}
+
+
+
+.detailHeading {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+
+.detailPara {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+
+.Banner {
+  padding-top: 60px;
+
+  & .premiumHeading {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  & .premiumOffer {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: rgb($theme1, 0.6);
+    width: fit-content;
+    border-radius: 50px 0px;
+    border: 2px solid $theme1;
+  }
+}
+
+/*-----------------Responsive------------------*/
+@mixin main-mixin-min-sm(){
+
+};
+@mixin main-mixin-min-md(){
+
+};
+@mixin main-mixin-min-lg(){
+
+};
+@mixin main-mixin-min-xl(){
+
+};
+@mixin main-mixin-min-xxl(){
+
+};
+@mixin main-mixin-max-xl(){
+
+};
+@mixin main-mixin-max-1300(){
+
+};
+@mixin main-mixin-max-lg(){
+
+};
+@mixin main-mixin-max-md(){
+    .detailHeading {
+      font-size: 18px;
+    }
+    .detailPara {
+      font-size: 14px;
+    }
+    .accordion {
+      & .accordion-item  {
+        & .accordion-button{
+          font-size: 16px;
+          &:hover {
+          }
+          &:not(.collapsed){
+          }
+    
+          &::after {
+          }
+    
+          &:not(.collapsed){
+            &::after {
+            }
+          } 
+        }
+    
+        & .accordion-body {
+        }
+      }
+      
+    }
+
+    .Banner {
+      padding-top: 60px;
+    
+      & .premiumHeading {
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: capitalize;
+      }
+      & .premiumOffer {
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: capitalize;
+        background-color: rgb($theme1, 0.6);
+        width: fit-content;
+        border-radius: 50px 0px;
+        border: 2px solid $theme1;
+      }
+    }
+};
+@mixin main-mixin-max-sm(){
+  .Banner {
+    padding-top: 60px;
+  
+    & .premiumHeading {
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+    & .premiumOffer {
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: capitalize;
+      background-color: rgb($theme1, 0.6);
+      width: fit-content;
+      border-radius: 50px 0px;
+      border: 2px solid $theme1;
+    }
+  }
+};
+@mixin main-mixin-max-xs(){
+  .Banner {
+    padding-top: 60px;
+  
+    & .premiumHeading {
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+    & .premiumOffer {
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: capitalize;
+      background-color: rgb($theme1, 0.6);
+      width: fit-content;
+      border-radius: 50px 0px;
+      border: 2px solid $theme1;
+    }
+  }
+  .detailPara {
+    font-size: 12px;
+  }
+};

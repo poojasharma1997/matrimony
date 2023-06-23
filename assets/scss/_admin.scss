@@ -1,0 +1,506 @@
+.img {
+    // aspect-ratio: 10/10;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.adminHeading {
+    line-height: 1.2;
+    & .mainHeading {
+        font-size: 35px;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: $theme1;
+    }
+    
+    & .subheading {
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: $gray-600;
+    }
+}
+
+
+
+//! ############################ Comman Main Css ##############################
+
+
+//? ############################ Sidebar Page ##############################
+[page-name=sidebar]{
+    width: 250px;
+    height: 100vh;
+    // background-color: $theme2;
+    
+    & .adminLogo {
+        width: 50px;
+        height: 50px;
+        height: 100px;
+    }
+
+    & .sidebaarList {
+        height: calc(100vh - 100px);
+
+        & .sidebarListItem {
+            padding: 0;
+            margin: 0px -12px 0px -15px;
+            --bs-accordion-border-width:none !important;
+
+            &.accordion {
+                // background-color: $gray-200;
+            }
+
+            & .sidebarListNav {
+                list-style: none;
+                background-color: transparent;
+                margin: 5px 0px;
+
+                &:last-child {
+                    margin: 0px;
+                }
+
+                & .sidebarListItems  {
+                    list-style: none;
+                    padding: 6px 15px;
+                    margin: 0px;
+                    transition: 0.3s ease;
+
+                            
+                    & .sidebarNavLink {
+                        & .sidelist {
+                            background-color: transparent;
+                            column-gap: 10px;
+
+                            &.accordion-button {
+                                &::after {
+                                    background-image: url('../img/icons/upArrow.svg');    
+                                    width: 7px;
+                                    height: 7px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    padding: 6px;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    background-position: top center;
+                                    content: "";
+                                    position: absolute;
+                                    right: 0;
+                                }
+                            }
+    
+                            & .sidebarNavIcon {
+                                width: 25px;
+                                height: 25px;
+                                padding: 6px;
+                                border-radius: 4px;
+                                align-items: center;
+                                justify-content: center;
+                                // background-color: lighten($theme2, 20);
+    
+                                & .img {
+                                    // filter: grayscale(1);
+                                }
+    
+                            }
+    
+                            & .sidebarNavText {
+                                font-size: 16px;
+                                font-weight: 600;
+                                text-transform: capitalize;
+                                color: $gray-700;
+                                // border-radius: 0px 30px 30px 0px;
+                            }
+                        }
+                        
+                    }
+    
+                    &.active {
+                        // background-color: $theme1;
+                        // border-radius: 0px 30px 30px 0px;
+    
+                        & .sidebarNavIcon {
+    
+                            & .img {
+                                filter: inherit;
+                            }
+                        }
+    
+                        & .sidebarNavText {
+                            color: $theme1 !important;
+                        }
+                    }
+    
+                }
+
+                & .accordion-collapse {
+                    
+                    & .accordion-body {
+                        padding: 0px 15px;
+
+                        & .subSidebarItem  {
+                            margin: 0px;
+                            padding: 0;
+
+                            & .subSidebarListNav {
+                                padding: 10px 0px 10px 32px;
+                                list-style-type: none;
+                                margin: 5px 0px;
+
+                                &:last-child {
+                                margin: 0px;
+
+                                }
+
+                                & .subSidebarNavLink {
+                                    // padding-left: 35px;
+                                    & .subSidebarContent {
+                                        column-gap: 10px;
+
+                                        & .sidebarNavIcon {
+                                            width: 30px;
+                                            height: 30px;   
+                                            padding: 8px;
+                                            border-radius: 3px;
+                                            align-items: center;
+                                            justify-content: center;
+                                        }
+
+                                        & .sidebarNavText {
+                                            font-size: 16px;
+                                            font-weight: 600;
+                                            text-transform: capitalize;
+                                            color: $gray-700;
+                                        }
+                                    }
+                                }
+
+                                &.active {
+                                    border-radius: 10px;
+                                    background-color: $theme2;
+                                    & .subSidebarContent {
+
+                                        & .sidebarNavIcon {
+                                            background-color: $white;
+                                        }
+
+                                        & .sidebarNavText {
+                                            color: $white !important;
+                                        }
+                                    }
+                                }
+
+                                &:hover {
+                                    border-radius: 10px;
+                                    background-color: rgb($theme1, 0.4);
+                                    & .subSidebarContent {
+
+                                        & .sidebarNavIcon {
+                                        }
+
+                                        & .sidebarNavText {
+                                            color: $white !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*-----------------resposnive---------------------------*/
+@mixin sidebar-mixin-min-sm(){
+
+};
+@mixin sidebar-mixin-min-md(){
+
+};
+@mixin sidebar-mixin-min-lg(){
+
+};
+@mixin sidebar-mixin-min-xl(){
+
+};
+@mixin sidebar-mixin-min-xxl(){
+
+};
+@mixin sidebar-mixin-max-xl(){
+
+};
+@mixin sidebar-mixin-max-1300(){
+
+};
+@mixin sidebar-mixin-max-lg(){
+
+};
+@mixin sidebar-mixin-max-md(){
+    [page-name=sidebar]{
+        
+        & .adminLogo {
+        }
+
+        & .sidebaarList {
+            & .sidebarListItem {
+                &.accordion {
+                }
+
+                & .sidebarListNav {
+                    &:last-child {
+                    }
+                    & .sidebarListItems  {
+                        & .sidebarNavLink {
+                            & .sidelist {
+                                &.accordion-button {
+                                    &::after {
+                                    }
+                                }
+        
+                                & .sidebarNavIcon {
+                                    & .img {
+                                    }
+                                }
+                                & .sidebarNavText {
+                                }
+                            }
+                        }
+                        &.active {
+                            & .sidebarNavIcon {
+                                & .img {
+                                }
+                            }
+                            & .sidebarNavText {
+                            }
+                        }
+                    }
+                    & .accordion-collapse {
+                        & .accordion-body {
+                            & .subSidebarItem  {
+                                & .subSidebarListNav {
+                                    &:last-child {
+                                    }
+                                    & .subSidebarNavLink {
+                                        & .subSidebarContent {
+
+                                            & .sidebarNavIcon {
+                                            }
+
+                                            & .sidebarNavText {
+                                            }
+                                        }
+                                    }
+                                    &.active {
+                                        & .subSidebarContent {
+                                            & .sidebarNavIcon {
+                                            }
+                                            & .sidebarNavText {
+                                            }
+                                        }
+                                    }
+
+                                    &:hover {
+                                        & .subSidebarContent {
+                                            & .sidebarNavIcon {
+                                            }
+                                            & .sidebarNavText {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
+@mixin sidebar-mixin-max-sm(){
+
+};
+@mixin sidebar-mixin-max-xs(){
+
+};
+
+//! ############################ End Sidebar Page ##############################
+
+
+//? ############################ Main Content #################################
+
+[page-name=mainContent]{
+    width: calc(100vw - 250px);
+    height: 100vh;
+    margin-right: 0;
+
+    & .header {
+        background-color: lighten($theme2, 10);
+        // border-radius: 12px;
+
+        & .formBg {
+            background-color: transparent;
+            width: 400px;
+            & .form {
+                padding: 0;
+
+                & .searchIcon {
+                    transform: translate(0, -50%);
+                    left: 10px;
+                    padding: 3px;
+                }
+                
+                & input {
+                    width: 60%;
+                    padding: .375rem .75rem .375rem 40px;
+                    transition: 0.3s ease;
+                    &:focus {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        & .btnstyle1 {
+            font-size: 14px;
+            border-radius: 8px;
+        }
+        & .logoutImg {
+            width: 39px;
+            height: 39px;
+            padding: 0px;
+        }
+    }
+
+    & .Content {
+        height: calc(100vh - 56px);
+        background-color: $gray-100;
+        border-radius: 12px 12px 0px 0px;
+
+        & .profileContent {
+            
+            & .profileFrame {
+
+                & .formBg {
+                    background-color: transparent;
+
+                    & .form {
+
+                        & .fileImg {
+                            width: 150px;
+                            height: 150px;
+                            border: 4px solid $theme1;
+                            border-radius: 100%;
+
+                            & .img {
+                                border-radius: 100%;
+                                width: 100%;
+                                height: 100%
+                            }
+                        }
+
+                        & .fileEditButton {
+                            width: 35px;
+                            height: 35px;
+                            border: 2px solid #a70000;
+                            border-radius: 100%;
+                            padding: 7px;
+                            position: absolute;
+                            bottom: -10px;
+                            z-index: 2;
+                            left: 50%;
+                            cursor: pointer;
+                            transform: translate(-50%,0); 
+
+                            & .img {
+                                // border-radius: 100%;
+                                width: 100%;
+                                height: 100%
+                            }
+                        }
+                    }
+                }
+
+                & .profileFrameDetails {
+                    & .name {
+                        font-size: 24px;
+                        font-weight: 600;
+                        color: $theme1;
+                        text-transform: capitalize;
+                    }
+
+                    & .profileFrameaddress {
+                        & .Frameaddress {
+                            font-size: 14px;
+                            color: $gray-600;
+                            & .FrameaddressImg {
+                                width: 15px;
+                                height: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+/*----------------------------------mainContent-----------------------*/
+@mixin mainContent-mixin-min-sm(){
+
+};
+@mixin mainContent-mixin-min-md(){
+
+};
+@mixin mainContent-mixin-min-lg(){
+
+};
+@mixin mainContent-mixin-min-xl(){
+
+};
+@mixin mainContent-mixin-min-xxl(){
+
+};
+@mixin mainContent-mixin-max-xl(){
+
+};
+@mixin mainContent-mixin-max-1300(){
+
+};
+@mixin mainContent-mixin-max-lg(){
+
+};
+@mixin mainContent-mixin-max-md(){
+    [page-name=mainContent]{
+    
+        & .header {
+    
+            & .formBg {
+                & .form {
+
+                    & .searchIcon {
+                    }
+                    
+                    & input {
+
+                        &:focus {
+                        }
+                    }
+                }
+            }
+
+            & .btnstyle1 {
+            }
+            & .logoutImg {
+            }
+        }
+    }
+};
+@mixin mainContent-mixin-max-sm(){
+
+};
+@mixin mainContent-mixin-max-xs(){
+
+};
+//! ############################ End Main Content ##############################
